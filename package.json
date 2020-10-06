@@ -5,11 +5,14 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
+    "format": "prettier --ignore-path ./.gitignore --write \"./**/*.{html,json,js,ts,css}\"",
+    "format:check": "prettier --ignore-path ./.gitignore --check \"./**/*.{html,json,js,ts,css}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Akil Mahmod Tipu",
   "license": "ISC",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.1.2"
   }
 }
